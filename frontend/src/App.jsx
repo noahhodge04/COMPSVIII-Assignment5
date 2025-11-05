@@ -20,7 +20,7 @@ function App() {
   const fetchRecipes = async () => {
     try {
       setLoading(true)
-      const response = await fetch(`${foo}/api/recipes`)
+      const response = await fetch(`${API_URL}/api/recipes`)
       if (response.ok) {
         const data = await response.json()
         setRecipes(data)
