@@ -7,7 +7,7 @@ const validateRecipeData = (recipe) => {
   if (!Array.isArray(recipe.ingredients) || recipe.ingredients.length === 0) return false
   if (!recipe.instructions || recipe.instructions.trim() === '') return false
   if (!recipe.cookingTime || recipe.cookingTime <= 0) return false
-  return false
+  return true
 }
 
 const formatCookingTime = (minutes) => {
